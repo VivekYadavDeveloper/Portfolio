@@ -2,7 +2,6 @@
 import React from 'react'
 import Image from 'next/image';
 import { assets } from '@/assets/assets';
-import About from './About';
 
 const Header = () => {
     return (
@@ -12,9 +11,9 @@ const Header = () => {
                 <Image src={assets.user_image} alt='' className='rounded-full w-32' />
             </div>
 
-            <h3 className='flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo'>Hi! I&apos;m Vivek Yadav <Image src={assets.hand_icon} alt='' className=' w-6' /></h3>
+            <h3 className='flex items-end gap-2 text-xl md:text-2xl mb-3 font-ovo'>Hi! I&apos;m Vivek Yadav <Image src={assets.hand_icon} alt='' className=' w-6' /></h3>
 
-            <h1 className='text-3xl sm:text-6xl lg:text-[36px] font-Ovo'>I&apos;m a Mobile App & Web developer with 3 years of experience. I enjoy building sites & apps. My focus is Flutter & React (Next.js).</h1>
+            <h1 className='text-3xl sm:text-6xl lg:text-[36px] font-ovo'>I&apos;m a Mobile App & Web developer with 3 years of experience. I enjoy building sites & apps. My focus is Flutter & React (Next.js).</h1>
 
             <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
 
