@@ -36,6 +36,16 @@
   --radius: 0.5rem;
 
 
+  /* Custom Grid Template Columns */
+  --grid-cols-auto-fill: repeat(auto-fill, minmax(200px, 1fr));
+  --grid-cols-auto-fit: repeat(auto-fit, minmax(200px, 1fr));
+  --grid-cols-sidebar: 250px 1fr;
+  --grid-cols-main: 1fr 300px;
+  --grid-cols-3-col: 1fr 2fr 1fr;
+  --grid-cols-cards: repeat(auto-fit, minmax(300px, 1fr));
+  --grid-cols-gallery: repeat(auto-fill, minmax(150px, 1fr));
+
+
   /* Shadow */
   --shadow: #000000;
 }
@@ -83,5 +93,46 @@
   h5,
   h6 {
     font-family: var(--font-ovo);
+  }
+}
+
+/**In Tailwind CSS v4, you need to define the utility classes 
+in @layer utilities to use them directly in your HTML/JSX **/
+@layer utilities {
+  .font-outfit {
+    font-family: var(--font-outfit);
+  }
+
+  .font-ovo {
+    font-family: var(--font-ovo);
+  }
+
+  /* Custom grid utilities */
+  .grid-cols-auto-fill {
+    grid-template-columns: var(--grid-cols-auto-fill);
+  }
+
+  .grid-cols-auto-fit {
+    grid-template-columns: var(--grid-cols-auto-fit);
+  }
+
+  .grid-cols-sidebar {
+    grid-template-columns: var(--grid-cols-sidebar);
+  }
+
+  .grid-cols-main {
+    grid-template-columns: var(--grid-cols-main);
+  }
+
+  .grid-cols-3-col {
+    grid-template-columns: var(--grid-cols-3-col);
+  }
+
+  .grid-cols-cards {
+    grid-template-columns: var(--grid-cols-cards);
+  }
+
+  .grid-cols-gallery {
+    grid-template-columns: var(--grid-cols-gallery);
   }
 }
