@@ -107,6 +107,15 @@ in @layer utilities to use them directly in your HTML/JSX **/
     font-family: var(--font-ovo);
   }
 
+  /* Constant Footer background utilities */
+  .bg-footer {
+    background-image: url('/footer-bg-color.png');
+    background-size: 90% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+
   /* Custom grid utilities */
   .grid-cols-auto-fill {
     grid-template-columns: var(--grid-cols-auto-fill);
