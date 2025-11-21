@@ -52,7 +52,8 @@ function Contact() {
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.7, delay: 0.5 }}
 
-                className='text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo'>Please contact me directly at vk662967@gmail.com or through this form.</motion.p>
+                className='text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo'>Please contact me directly at
+                <a href="mailto:vk662967@gmail.com" className="underline ml-1"> vk662967@gmail.com </a> or through this form.</motion.p>
 
             <motion.form
                 initial={{ opacity: 0 }}
@@ -81,8 +82,7 @@ function Contact() {
                     name='message' className='w-full p-4 outline-none mb-6 border-[0.5px] border-gray-400 rounded-md bg-white text-start' rows={6} id="" placeholder='Your message' required></motion.textarea>
                 <motion.button
                     whileHover={{ scale: 1.05 }}
-                    transition={{duration:0.5}}
-                   
+                    transition={{ duration: 0.5 }}
                     className="group flex items-center justify-center gap-2 h-12 w-32 bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 dark:bg-white dark:bg-opacity-10 disabled:scale-100 disabled:bg-opacity-65" type='submit'>Submit<Image className="w-4 invert items-center" src={assets.send_icon} alt='send' /></motion.button>
 
 

@@ -14,7 +14,7 @@ const Header = () => {
                 transition={{ duration: 0.8, type: 'spring', stiffness: 100 }}
                 whileInView={{ scale: 1 }}
             >
-                <Image src={assets.user_image} alt='' className='rounded-full w-32' />
+                <Image src={assets.profile} alt='' className='rounded-full w-32' />
             </motion.div>
 
             <motion.h3
@@ -34,14 +34,25 @@ const Header = () => {
                 <motion.a
                     initial={{ y: 20, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.6, delay: 1 }} href="#contact" className='px-10 py-3 border-white rounded-full bg-black text-white flex items-center gap-2'>contact me <Image src={assets.right_arrow_white} alt='' className='w-4' /></motion.a>
+                    transition={{ duration: 0.6, delay: 1 }} href="#contact" className='p-2.5 border-white rounded-full bg-black text-white flex items-center gap-2 transition-all focus:scale-110 hover:scale-110 active:scale-105 hover:shadow-purple-lg'>Contact me here <Image src={assets.right_arrow_white} alt='' className='w-4' /></motion.a>
 
                 <motion.a
                     initial={{ y: 20, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.6, delay: 1.2 }}
-                    href="/sample-resume.pdf" download className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2'>my resume <Image src={assets.download_icon} alt='' className='w-4' /></motion.a>
+                    href="/vivek-yadav.pdf" download className='p-2.5 border rounded-full border-gray-400 flex items-center gap-2 transition-all hover:scale-110 active:scale-105 hover:shadow-purple-lg'>Download CV<Image src={assets.download_icon} alt='' className='w-4' /></motion.a>
 
+                <motion.a
+                    initial={{ y: 20, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.6, delay: 1.3 }}
+                    className='p-2.5 border rounded-4xl bg-white border-gray-300 flex items-center gap-1 cursor-pointer hover:bg-light-hover hover:-translate-y-1 duration-500 hover:shadow-purple-lg' href="https://www.linkedin.com/in/vivekyadavtiger/"><Image src={assets.linkedin} alt='' className='w-8' /></motion.a>
+
+                <motion.a
+                    initial={{ y: 20, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.6, delay: 1.4 }}
+                    className='p-2.5 border rounded-4xl bg-white border-gray-300 flex items-center gap-2 cursor-pointer hover:bg-light-hover hover:-translate-y-1 duration-500 hover:shadow-purple-lg' href="https://github.com/VivekYadavDeveloper"><Image src={assets.github} alt='' className='w-8' /></motion.a>
             </div>
 
         </div>

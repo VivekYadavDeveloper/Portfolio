@@ -66,13 +66,13 @@ const About = () => {
                         initial={{ y: 20, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.5, delay: 1.3 }}
-                        className='my-6 text-gray-700 font-ovo'>Tools I Use</motion.h4>
+                        className='my-6 text-gray-700 font-ovo'>My Skills And Tools</motion.h4>
 
                     <motion.ul
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         transition={{ duration: 0.5, delay: 1.3 }}
-                        className='flex items-center gap-3 sm:gap-5'>
+                        className='grid grid-cols-3 sm:grid-cols-6 items-center gap-3 sm:gap-5'>
                         {toolsData.map((tools, index) => (
                             <motion.li
                                 whileHover={{ scale: 1.1 }}

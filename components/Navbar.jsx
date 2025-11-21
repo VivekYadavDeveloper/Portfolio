@@ -33,13 +33,14 @@ const Navbar = () => {
             </div>
             <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${isScroll ? "bg-white/50 backdrop-blur-lg shadow-sm" : " "}`}>
                 <a href="#top">
-                    <Image src={assets.logo} className='w-28 cursor-pointer mr-14' alt='logo' />
+                    <h1 className='font-extrabold text-4xl font-ovo'>Vivek Yadav <span className='text-red-500 font-bold'>.</span></h1>
+                    {/* <Image src={assets.logo} className='h-50 w-50 cursor-pointer mr-14' alt='logo' /> */}
                 </a>
                 {/* Tabbar Menus */}
                 <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-4 ${isScroll ? "" : "bg-white/50 shadow-sm"} `}>
                     <li><a className='font-ovo' href="#top">Home</a></li>
                     <li><a className='font-ovo' href="#about">About me</a></li>
-                    <li><a className='font-ovo' href="#services">Services</a></li>
+                    {/* <li><a className='font-ovo' href="#services">Services</a></li> */}
                     <li><a className='font-ovo' href="#work">My Work</a></li>
                     <li><a className='font-ovo' href="#contact">Contact me</a></li>
                 </ul>
@@ -69,7 +70,7 @@ const Navbar = () => {
 
                     <li><a className='font-ovo' onClick={closeMenu} href="#top">Home</a></li>
                     <li><a className='font-ovo' onClick={closeMenu} href="#about">About me</a></li>
-                    <li><a className='font-ovo' onClick={closeMenu} href="#services">Services</a></li>
+                    {/* <li><a className='font-ovo' onClick={closeMenu} href="#services">Services</a></li> */}
                     <li><a className='font-ovo' onClick={closeMenu} href="#work">My Work</a></li>
                     <li><a className='font-ovo' onClick={closeMenu} href="#contact">Contact me</a></li>
                 </ul>
@@ -79,4 +80,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar/* TODO: 01:18:35 */
+export default Navbar

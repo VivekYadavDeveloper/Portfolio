@@ -9,13 +9,24 @@ import vscode from './vscode.png';
 import firebase from './firebase.png';
 import figma from './figma.png';
 import git from './git.png';
+import nextjs from './nextjs.png';
 import mongodb from './mongodb.png';
+import android from './android.png';
+import github from './github.png';
+import gitlab from './gitlab.png';
+import supabase from './supabase.png';
+import tailwind from './tailwind.png';
+import java from './java.png';
+import flutter from './flutter.png';
+import kotlin from './kotlin.png';
+import linkedin from './linkedin.png';
 import right_arrow_white from './right-arrow-white.png';
-import logo from './logo.png';
+import logo from './logo1.png';
 import logo_dark from './logo_dark.png';
 import mail_icon from './mail_icon.png';
 import mail_icon_dark from './mail_icon_dark.png';
 import profile_img from './profile-img.png';
+import profile from './profile.png';
 import download_icon from './download-icon.png';
 import hand_icon from './hand-icon.png';
 import info_image from './info_image.png';
@@ -49,14 +60,25 @@ export const assets = {
     firebase,
     figma,
     info_image,
+    java,
+    flutter,
+    kotlin,
+    supabase,
+    tailwind,
     git,
     mongodb,
+    nextjs,
+    android,
+    github,
+    gitlab,
+    linkedin,
     right_arrow_white,
     logo,
     logo_dark,
     mail_icon,
     mail_icon_dark,
     profile_img,
+    profile,
     download_icon,
     hand_icon,
     header_bg_color,
@@ -80,24 +102,28 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
+        title: 'Online Canteen',
+        description: 'Food and grocery delivery within 30-45 minutes in Pilkhuwa.',
         bgImage: '/work-1.png',
+        link: 'https://play.google.com/store/apps/developer?id=PAM+Solutions&hl=en',
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
+        title: 'Jyotish Rashya',
+        description: 'Talk to Astrologer on call and get answers to all your worries',
         bgImage: '/work-2.png',
+        link: 'https://play.google.com/store/apps/developer?id=Astrology+and+Horoscope&hl=en',
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
+        title: 'The Installer',
+        description: 'Get complete installation services in India for home and corporate offices.',
         bgImage: '/work-3.png',
+        link: 'https://play.google.com/store/apps/details?id=com.theinstallers.theinstallers&hl=en',
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        title: 'Think IAS-LMS',
+        description: 'Start prepairing for competitive CGPSC. through online classes.',
         bgImage: '/work-4.png',
+        link: 'https://play.google.com/store/apps/details?id=com.thinkiasnew.android&hl=en',
     },
 ]
 
@@ -115,5 +141,5 @@ export const infoList = [
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.java, assets.flutter, assets.kotlin, assets.tailwind, assets.nextjs, assets.mongodb, assets.git, assets.github, assets.gitlab, assets.android, assets.vscode, assets.firebase, assets.supabase,
 ];
