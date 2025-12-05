@@ -6,7 +6,7 @@ import { motion } from "motion/react"
 
 const Header = () => {
     return (
-        <div className='w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4'>
+        <div className='w-11/12 max-w-3xl text-center mx-auto min-h-dvh flex flex-col items-center justify-center gap-4 p-15'>
 
             <motion.div
                 initial={{ scale: 0 }}
@@ -21,13 +21,13 @@ const Header = () => {
                 initial={{ y: -20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className='flex items-end gap-2 text-xl md:text-2xl mb-3 font-ovo'>Hi! I&apos;m Vivek Yadav <Image src={assets.hand_icon} alt='' className=' w-6' /></motion.h3>
+                className='flex items-center gap-2 text-xl md:text-2xl mb-3 font-ovo'>Hi! I&apos;m Vivek Yadav <Image src={assets.hand_icon} alt='' className='w-6' /></motion.h3>
 
             <motion.h1
                 initial={{ y: -20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
-                className='text-3xl sm:text-6xl lg:text-[36px] font-ovo'>I&apos;m a Mobile App & Web developer with 3 years of experience. I enjoy building sites & apps. My focus is Flutter & React (Next.js).</motion.h1>
+                className='text-3xl sm:text-6xl lg:text-[36px] font-ovo'>I&apos;m a Mobile App & Web developer with 3 years of experience. I enjoy building sites & apps. My focus is Flutter, Jetpack Compose & React (Next.js).</motion.h1>
 
             <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
 
