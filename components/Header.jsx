@@ -27,7 +27,7 @@ const Header = () => {
                 initial={{ y: -20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
-                className='text-3xl sm:text-6xl lg:text-[36px] font-ovo'>I&apos;m a Mobile App & Web developer with 3 years of experience. I enjoy building sites & apps. My focus is Flutter, Jetpack Compose & React (Next.js).</motion.h1>
+                className='text-3xl sm:text-6xl lg:text-[36px] font-ovo'>I&apos;m a  Mobile App & Web developer with 3 years of experience. I enjoy building sites & apps. My focus is Flutter, Jetpack Compose & React (Next.js).</motion.h1>
 
             <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
 
