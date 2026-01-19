@@ -40,7 +40,7 @@ const Header = () => {
                     initial={{ y: 20, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.6, delay: 1.2 }}
-                    href="/vivek-yadav.pdf" download className='p-2.5 border rounded-full border-gray-400 flex items-center gap-2 transition-all hover:scale-110 active:scale-105 hover:shadow-purple-lg'>Download CV<Image src={assets.download_icon} alt='' className='w-4' /></motion.a>
+                    href="/vivek-yadav-updated.pdf" download className='p-2.5 border rounded-full border-gray-400 flex items-center gap-2 transition-all hover:scale-110 active:scale-105 hover:shadow-purple-lg'>Download CV<Image src={assets.download_icon} alt='' className='w-4' /></motion.a>
 
                 <motion.a
                     initial={{ y: 20, opacity: 0 }}
