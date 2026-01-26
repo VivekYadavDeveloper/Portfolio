@@ -47,6 +47,10 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import playstore from './playstore.png';
+import appstore from './appstore.png';
+
+
 
 export const assets = {
     user_image,
@@ -97,33 +101,71 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    playstore,
+    appstore,
 };
 
 export const workData = [
     {
         title: 'Online Canteen',
         description: 'Food and grocery delivery within 30-45 minutes in Pilkhuwa.',
-        bgImage: '/work-1.png',
+        bgImage: '/logo-1.png',
+        screenshots: [
+            '/screenshots/a.png',
+            '/screenshots/b.png',
+            '/screenshots/c.png',
+            '/screenshots/d.png',
+        ],
         link: 'https://play.google.com/store/apps/developer?id=PAM+Solutions&hl=en',
     },
     {
         title: 'Jyotish Rashya',
         description: 'Talk to Astrologer on call and get answers to all your worries',
-        bgImage: '/work-2.png',
+        bgImage: '/Jyo.png',
+        screenshots: [
+            '/screenshots/a.png',
+            '/screenshots/b.png',
+            '/screenshots/c.png',
+            '/screenshots/d.png',
+        ],
         link: 'https://play.google.com/store/apps/developer?id=Astrology+and+Horoscope&hl=en',
     },
     {
         title: 'The Installer',
         description: 'Get complete installation services in India for home and corporate offices.',
-        bgImage: '/work-3.png',
+        bgImage: '/Installer.png',
+        screenshots: [
+            '/screenshots/a.png',
+            '/screenshots/b.png',
+            '/screenshots/c.png',
+            '/screenshots/d.png',
+        ],
         link: 'https://play.google.com/store/apps/details?id=com.theinstallers.theinstallers&hl=en',
     },
     {
         title: 'Think IAS-LMS',
         description: 'Start prepairing for competitive CGPSC. through online classes.',
-        bgImage: '/work-4.png',
+        bgImage: '/Think.png',
+        screenshots: [
+            '/screenshots/a.png',
+            '/screenshots/b.png',
+            '/screenshots/c.png',
+            '/screenshots/d.png',
+        ],
         link: 'https://play.google.com/store/apps/details?id=com.thinkiasnew.android&hl=en',
+    },
+    {
+        title: 'Bible App',
+        description: 'This app is designed for users who want to stay connected with Gods Word anytime and anywhere',
+        bgImage: '/Pav.png',
+        screenshots: [
+            '/screenshots/a.png',
+            '/screenshots/b.png',
+            '/screenshots/c.png',
+            '/screenshots/d.png',
+        ],
+        link: 'https://play.google.com/store/apps/details?id=com.create.bible&hl=en_IN',
     },
 ]
 
