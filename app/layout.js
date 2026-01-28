@@ -1,5 +1,6 @@
 import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/Footer";
 
 /* If need font change here "Before that Added/Import Above" */
 const outfit = Outfit({
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
         className={`${outfit.className} ${ovo.className} antialiased leading-8 overflow-x-hidden`}
       >
         {children}
+        <Footer/>
       </body>
     </html>
   );

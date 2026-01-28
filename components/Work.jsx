@@ -6,9 +6,6 @@ import { motion } from 'motion/react'
 import Link from "next/link";
 
 
-
-
-
 const Work = ({ showAll = false }) => {
     const projectToShow = showAll ? workData : workData.slice(0, 4);
 
@@ -53,7 +50,7 @@ const Work = ({ showAll = false }) => {
                         </div>
 
 
-                        <div className='bg-white w-30/32 rounded-md absolute bottom-5  left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7'>
+                        <div className='bg-white w-30/32 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7'>
 
                             <div>
                                 <h2 className='text-lg font-semibold my-4 text-gray-700'>{projects.title}</h2>
@@ -79,7 +76,6 @@ const Work = ({ showAll = false }) => {
                     Show More<Image className='w-4' src={assets.right_arrow_bold} alt='Showmore' />
                 </Link>
             </motion.div>)}
-
 
 
         </motion.div>

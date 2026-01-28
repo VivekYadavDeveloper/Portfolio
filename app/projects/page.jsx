@@ -1,15 +1,32 @@
 'use client'
 
 import Image from "next/image";
-import Work from "@/components/Work";
 import { assets, workData } from "@/assets/assets";
 import { motion } from 'motion/react'
-export default function ProjectsPage() {
+
+
+import React from 'react'
+
+function ProjectPage() {
     return (
-        <section className="pt-28 px-[8%]">
+        <motion.section
+            initial={{ opacity: 0.3 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: .5 }}
+
+            className="pt-12 px-8 bg-footer">
 
             {/* Featured Project */}
-            <h1 className="font-bold text-4xl p-4">Feature Project</h1>
+            <motion.h1
+                initial={{ y: -20, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+                className="font-bold text-4xl px-4">Featured Project</motion.h1>
+            <motion.p
+                initial={{ x: -20, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.7 }}
+                className="text-gray-500 px-4 mb-10">Every keystroke tells a story — built with passion and code✨</motion.p>
 
             <motion.div
                 whileHover={{ scale: 1.02 }}
@@ -22,7 +39,7 @@ export default function ProjectsPage() {
                     {/* App Icon */}
                     <div className="w-20 h-20 rounded-2xl bg-green-100 flex items-center justify-center mb-6 shadow-lg shadow-black/10">
                         <Image
-                            src={workData[4].bgImage}
+                            src={workData[5].bgImage}
                             width={80}
                             height={80}
                             alt="App Logo"
@@ -31,7 +48,7 @@ export default function ProjectsPage() {
                     </div>
 
                     <h1 className="text-4xl font-bold text-gray-900 mb-4">
-                        {workData[4].title}
+                        {workData[5].title}
                     </h1>
 
                     <p className="text-gray-600 mb-6 p-3 max-w-md">
@@ -41,7 +58,7 @@ export default function ProjectsPage() {
                     {/* Store Buttons */}
                     <div className="flex gap-4 mb-6">
                         <a
-                            href={workData[4].link}
+                            href={workData[5].link.playstore}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="px-5 py-3 border rounded-xl flex items-center gap-2 hover:bg-gray-100"
@@ -49,13 +66,9 @@ export default function ProjectsPage() {
                             <Image className="w-4" src={assets.playstore} alt="Playstore" />
                             Playstore
                         </a>
-
-                        {/* <button className="px-5 py-3 border rounded-xl flex items-center gap-2 hover:bg-gray-100">
-                            <Image className='w-4' src={assets.appstore} alt='Playstore' /> Playstore iOS
-                        </button> */}
                     </div>
 
-                    {/* Stats */}
+                    {/* Info */}
                     <div className="flex gap-8 text-gray-500 text-sm">
                         <div>⭐ 4.8</div>
                         <div>1K+ Downloads</div>
@@ -92,11 +105,82 @@ export default function ProjectsPage() {
 
             </motion.div>
 
-            {/* ALL PROJECTS GRID */}
-            <div className="mt-20">
-                <Work showAll />
-            </div>
+            <motion.h1
+                initial={{ y: -20, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+                className="font-bold text-4xl px-4 py-10">Other Projects</motion.h1>
+            <motion.div
+                initial={{ y: -20, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+                className="grid grid-cols-3 gap-6 mb-20" >
 
-        </section>
-    );
+                {/* ALL PROJECTS GRID */}
+                {/* Other App Section */}
+
+                {workData.map((projects, index) => (
+                    <motion.div
+                        initial={{ y: -20, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        whileHover={{ scale: 1.02 }}
+                        transition={{ type: "spring", stiffness: 200 }}
+                        id='work'
+                        key={index} className="border rounded-2xl bg-white/45 relative group cursor-pointer p-6">
+
+                        {/* Icon + Title */}
+                        <div className="flex items-center gap-4">
+                            <div className="w-20 h-20 bg-white rounded-2xl shadow-lg shadow-black/10 flex items-center justify-center">
+                                <Image
+                                    className="rounded-2xl"
+                                    src={projects.bgImage}
+                                    width={'200'} height={'200'}
+                                    alt="App logo"
+                                />
+                            </div>
+                            <h2 className="text-2xl font-semibold text-gray-800">{projects.title}</h2>
+                        </div>
+
+                        <h3 className="mt-8">{projects.description}</h3>
+                        {/* App link Section */}
+
+                        <div className="flex gap-4 mt-6">
+                            <a
+                                href={projects.link.playstore}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="px-5 py-3 border rounded-xl flex items-center gap-2 hover:bg-gray-100">
+                                <Image className="w-4" src={assets.playstore} alt="Playstore" />Playstore
+                            </a>
+                            <a
+                                href={projects.link.appstore}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="px-5 py-3 border rounded-xl flex items-center gap-2 hover:bg-gray-100">
+                                <Image className="w-4" src={assets.appstore} alt="Playstore" />Appstore
+                            </a>
+
+
+                        </div>
+
+                        {/* App Rating2 */}
+                        <div className="mt-5 flex gap-6 text-sm text-gray-500">
+                            <div className="">{projects.apprating?.rating}</div>
+                            <div className="">{projects.apprating?.download}</div>
+                            <div className="">{projects.apprating?.rated}</div>
+                        </div>
+
+                    </motion.div>
+                ))}
+
+
+            </motion.div>
+
+
+
+        </motion.section>
+    )
 }
+
+export default ProjectPage
+

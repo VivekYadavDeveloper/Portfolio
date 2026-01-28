@@ -117,7 +117,29 @@ export const workData = [
             '/screenshots/c.png',
             '/screenshots/d.png',
         ],
-        link: 'https://play.google.com/store/apps/developer?id=PAM+Solutions&hl=en',
+        apprating: {
+            rating: '⭐️ 4.3',
+            download: '10k+',
+            rated: 'Rated 3+'
+        },
+        link: { playstore: 'https://play.google.com/store/apps/developer?id=PAM+Solutions&hl=en', appstore: 'https://apps.apple.com/in/app/online-canteen/id6499261675' }
+    },
+    {
+        title: 'Online Canteen Delivery',
+        description: 'The OC Delivery Boy App is designed for delivery partners to handle canteen orders quickly, accurately, and with complete convenience.',
+        bgImage: '/delivery.png',
+        screenshots: [
+            '/screenshots/a.png',
+            '/screenshots/b.png',
+            '/screenshots/c.png',
+            '/screenshots/d.png',
+        ],
+        apprating: {
+            rating: '⭐️ 4.3',
+            download: '10+',
+            rated: 'Rated 3+'
+        },
+        link: { playstore: 'https://play.google.com/store/apps/developer?id=PAM+Solutions&hl=en', appstore: '' }
     },
     {
         title: 'Jyotish Rashya',
@@ -129,7 +151,12 @@ export const workData = [
             '/screenshots/c.png',
             '/screenshots/d.png',
         ],
-        link: 'https://play.google.com/store/apps/developer?id=Astrology+and+Horoscope&hl=en',
+        apprating: {
+            rating: '⭐️ 4.5',
+            download: '10k+',
+            rated: 'Rated 3+'
+        },
+        link: { playstore: 'https://play.google.com/store/apps/developer?id=Astrology+and+Horoscope&hl=en', appstore: '' }
     },
     {
         title: 'The Installer',
@@ -141,7 +168,12 @@ export const workData = [
             '/screenshots/c.png',
             '/screenshots/d.png',
         ],
-        link: 'https://play.google.com/store/apps/details?id=com.theinstallers.theinstallers&hl=en',
+        apprating: {
+            rating: '⭐️ 4.3',
+            download: '1k+',
+            rated: 'Rated 3+'
+        },
+        link: { playstore: 'https://play.google.com/store/apps/details?id=com.theinstallers.theinstallers&hl=en', appstore: 'https://apps.apple.com/in/developer/innovate-installers-services-private-limited/id1724172109' }
     },
     {
         title: 'Think IAS-LMS',
@@ -153,7 +185,15 @@ export const workData = [
             '/screenshots/c.png',
             '/screenshots/d.png',
         ],
-        link: 'https://play.google.com/store/apps/details?id=com.thinkiasnew.android&hl=en',
+        apprating: {
+            rating: '⭐️ 4.3',
+            download: '100+',
+            rated: 'Rated 3+'
+        },
+        link: {
+            playstore: 'https://play.google.com/store/apps/details?id=com.thinkiasnew.android&hl=en',
+            appstore: ''
+        }
     },
     {
         title: 'Bible App',
@@ -165,7 +205,12 @@ export const workData = [
             '/screenshots/c.png',
             '/screenshots/d.png',
         ],
-        link: 'https://play.google.com/store/apps/details?id=com.create.bible&hl=en_IN',
+        apprating: {
+            rating: '⭐️ 4.4',
+            download: '100+',
+            rated: 'Rated 3+'
+        },
+        link: { playstore: 'https://play.google.com/store/apps/details?id=com.create.bible&hl=en_IN', appstore: '' }
     },
 ]
 
