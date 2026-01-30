@@ -3,8 +3,6 @@
 import Image from "next/image";
 import { assets, workData } from "@/assets/assets";
 import { motion } from 'motion/react'
-
-
 import React from 'react'
 
 function ProjectPage() {
@@ -21,7 +19,7 @@ function ProjectPage() {
                 initial={{ y: -20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
-                className="font-bold text-4xl px-4">Featured Project</motion.h1>
+                className="font-bold font-ovo text-4xl px-4">Featured Project</motion.h1>
             <motion.p
                 initial={{ x: -20, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
@@ -47,16 +45,16 @@ function ProjectPage() {
                         />
                     </div>
 
-                    <h1 className="text-4xl font-bold text-gray-900 mb-4">
+                    <h1 className="text-4xl font-ovo font-bold text-gray-900 mb-4">
                         {workData[5].title}
                     </h1>
 
-                    <p className="text-gray-600 mb-6 p-3 max-w-md">
+                    <p className="text-gray-600 font-ovo mb-6 p-3 max-w-md">
                         Hindi Bible App helps you read, understand, and study the Holy Bible in simple and clear Hindi language.
                     </p>
 
                     {/* Store Buttons */}
-                    <div className="flex gap-4 mb-6">
+                    <div className="flex gap-4 fony-ovo mb-6">
                         <a
                             href={workData[5].link.playstore}
                             target="_blank"
@@ -70,9 +68,9 @@ function ProjectPage() {
 
                     {/* Info */}
                     <div className="flex gap-8 text-gray-500 text-sm">
-                        <div>⭐ 4.8</div>
-                        <div>1K+ Downloads</div>
-                        <div>Rated 4+</div>
+                        <div>{workData[5].apprating.rating}</div>
+                        <div>{workData[5].apprating.download}</div>
+                        <div>{workData[5].apprating.rated}</div>
                     </div>
                 </div>
 
@@ -114,7 +112,7 @@ function ProjectPage() {
                 initial={{ y: -20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
-                className="grid grid-cols-3 gap-6 mb-20" >
+                className="grid grid-cols-3-col gap-6 mb-20">
 
                 {/* ALL PROJECTS GRID */}
                 {/* Other App Section */}

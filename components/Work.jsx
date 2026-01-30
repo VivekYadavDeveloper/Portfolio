@@ -56,7 +56,7 @@ const Work = ({ showAll = false }) => {
                                 <h2 className='text-lg font-semibold my-4 text-gray-700'>{projects.title}</h2>
                                 <p className='text-sm text-gray-700'>{projects.description}</p>
                                 <div className='border rounded border-black w-10 aspect-square flex items-center justify-center shadow-dark group-hover:bg-purple-100 transition duration-500'>
-                                    <a href={projects.link} > <Image src={assets.send_icon} alt="send icon" className='w-5' /></a>
+                                    <a href={projects.link?.playstore} > <Image src={assets.send_icon} alt="send icon" className='w-5' /></a>
                                 </div>
                             </div>
 
