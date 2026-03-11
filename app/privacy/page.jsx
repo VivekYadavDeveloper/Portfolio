@@ -1,16 +1,32 @@
 "use client"
 import React from 'react'
+import { motion } from 'motion/react'
 
 const PrivacyPolicyPage = () => {
     return (
-        <div className="py-10 bg-footer">
-            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            id='privacy'
+            className="py-10 bg-footer">
+            <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.8 }} className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
-                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-ovo mb-6">
+                <motion.h1
+                    initial={{ y: -20, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.5, delay: 0.3 }}
+                    className="text-2xl sm:text-3xl lg:text-4xl font-bold font-ovo mb-6">
                     Privacy Policy
-                </h1>
+                </motion.h1>
 
-                <div className="space-y-6 text-justify">
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 0.8 }} className="space-y-6 text-justify">
 
                     <p>
                         Your privacy is important to us. It is
@@ -18,7 +34,10 @@ const PrivacyPolicyPage = () => {
                         policy to respect your privacy regarding any information we may collect from you across our website, mobile applications, and other sites we own and operate.
                     </p>
 
-                    <div>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.8 }}>
                         <h2 className="text-xl sm:text-2xl font-semibold text-gray-500 mb-2">
                             Information We Collect
                         </h2>
@@ -26,9 +45,12 @@ const PrivacyPolicyPage = () => {
                             We only ask for personal information when we truly need it to provide a service to you.
                             We collect it by fair and lawful means, with your knowledge and consent.
                         </p>
-                    </div>
+                    </motion.div>
 
-                    <div>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.8 }}>
                         <h2 className="text-xl sm:text-2xl font-semibold text-gray-500 mb-2">
                             Deletion Of Account
                         </h2>
@@ -39,9 +61,12 @@ const PrivacyPolicyPage = () => {
                                 desiappdev24@gmail.com
                             </a>.
                         </p>
-                    </div>
+                    </motion.div>
 
-                    <div>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.8 }}>
                         <h2 className="text-xl sm:text-2xl font-semibold text-gray-500 mb-2">
                             Security
                         </h2>
@@ -49,11 +74,11 @@ const PrivacyPolicyPage = () => {
                             We don’t share any personally identifying information publicly or with third-parties,
                             except when required by law.
                         </p>
-                    </div>
+                    </motion.div>
 
-                </div>
-            </div>
-        </div>
+                </motion.div>
+            </motion.div>
+        </motion.div>
     )
 }
 
