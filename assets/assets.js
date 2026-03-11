@@ -49,6 +49,10 @@ import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import playstore from './playstore.png';
 import appstore from './appstore.png';
+import postgress from './postgresql.png';
+import docker from './docker.png';
+import springboot from './spring.png';
+
 
 
 
@@ -62,6 +66,9 @@ export const assets = {
     project_icon_dark,
     vscode,
     firebase,
+    postgress,
+    docker,
+    springboot,
     figma,
     info_image,
     java,
@@ -222,11 +229,11 @@ export const serviceData = [
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'Flutter, Jetpack Compose, HTML, Tailwind, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'M.Sc in Computer Science (Last Year)' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'Flutter, Jetpack Compose, Springboot, HTML, Tailwind, Next Js' },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'M.Sc in Computer Science (Final Semester)' },
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 10 projects' }
 ];
 
 export const toolsData = [
-    assets.java, assets.flutter, assets.kotlin, assets.tailwind, assets.nextjs, assets.mongodb, assets.git, assets.github, assets.gitlab, assets.android, assets.vscode, assets.firebase, assets.supabase,
+    assets.java, assets.flutter, assets.kotlin, assets.springboot, assets.postgress, assets.docker, assets.tailwind, assets.nextjs, assets.mongodb, assets.git, assets.github, assets.gitlab, assets.android, assets.vscode, assets.firebase, assets.supabase,
 ];
