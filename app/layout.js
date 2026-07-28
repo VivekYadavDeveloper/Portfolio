@@ -1,6 +1,6 @@
 import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
-import Footer from "@/components/Footer";
+import Footer from "../components/Footer";
 import { Analytics } from '@vercel/analytics/next';
 
 /* If need font change here "Before that Added/Import Above" */
@@ -20,7 +20,7 @@ const ovo = Ovo({
 
 
 export const metadata = {
-  title: "VivekYadav - Portfolio",
+  title: "CreationiX",
   description: "Eat. Code. Repeat.",
 };
 

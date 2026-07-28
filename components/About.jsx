@@ -1,7 +1,6 @@
 "use client"
-import { assets, infoList, toolsData } from '@/assets/assets'
+import { assets, infoList, toolsData } from '../assets/assets'
 import Image from 'next/image'
-import React from 'react'
 import { motion } from 'motion/react'
 
 

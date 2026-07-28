@@ -4,6 +4,7 @@ import Image from "next/image";
 import { assets, workData } from "@/assets/assets";
 import { motion } from 'motion/react'
 import React from 'react'
+import Link from "next/link";
 
 function ProjectPage() {
     return (
@@ -55,7 +56,7 @@ function ProjectPage() {
 
                     {/* Store Buttons */}
                     <div className="flex gap-4 fony-ovo mb-6">
-                        <a
+                        <Link
                             href={workData[5].link.playstore}
                             target="_blank"
                             rel="noopener noreferrer"
@@ -63,7 +64,7 @@ function ProjectPage() {
                         >
                             <Image className="w-4" src={assets.playstore} alt="Playstore" />
                             Playstore
-                        </a>
+                        </Link>
                     </div>
 
                     {/* Info */}
@@ -143,20 +144,20 @@ function ProjectPage() {
                         {/* App link Section */}
 
                         <div className="flex gap-4 mt-6">
-                            <a
+                            <Link
                                 href={projects.link.playstore}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="px-5 py-3 border rounded-xl flex items-center gap-2 hover:bg-gray-100">
                                 <Image className="w-4" src={assets.playstore} alt="Playstore" />Playstore
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                                 href={projects.link.appstore}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="px-5 py-3 border rounded-xl flex items-center gap-2 hover:bg-gray-100">
                                 <Image className="w-4" src={assets.appstore} alt="Playstore" />Appstore
-                            </a>
+                            </Link>
 
 
                         </div>

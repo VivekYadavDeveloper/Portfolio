@@ -1,8 +1,9 @@
 "use client"
-import { assets } from '@/assets/assets'
+import { assets } from '../assets/assets'
 import Image from 'next/image'
 import React, { useState } from 'react'
 import { motion } from 'motion/react'
+import Link from 'next/link'
 
 function Contact() {
 
@@ -53,7 +54,7 @@ function Contact() {
                 transition={{ duration: 0.7, delay: 0.5 }}
 
                 className='text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo'>Please contact me directly at
-                <a href="mailto:vk662967@gmail.com" className="underline ml-1"> vk662967@gmail.com </a> or through this form.</motion.p>
+                <Link href="mailto:vk662967@gmail.com" className="underline ml-1"> vk662967@gmail.com </Link> or through this form.</motion.p>
 
             <motion.form
                 initial={{ opacity: 0 }}

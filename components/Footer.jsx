@@ -1,7 +1,5 @@
-import { assets } from '@/assets/assets'
-import Image from 'next/image'
 import React from 'react'
-import Link from "next/link";
+import Link from 'next/link'
 
 const Footer = () => {
     return (
@@ -17,11 +15,12 @@ const Footer = () => {
                 <p className=''>© {new Date().getFullYear()} Yadav Ji. All rights reserved.</p>
                 <p className='font-ovo font-semibold text-gray-600'>Built with 🖤 NextJs</p>
                 <ul className='flex items-center gap-10 justify-center mt-4 sm:mt-0'>
-                    <li> <a target='_blank' href="https://github.com/VivekYadavDeveloper">Github</a></li>
-                    <li> <a target='_blank' href="https://medium.com/@desiappdev24">Medium</a></li>
-                    <li> <a target='_blank' href="https://stackoverflow.com/users/17017641/vivek-yadav">Stack overflow</a></li>
-                    <li> <a target='_blank' href="https://www.linkedin.com/in/vivekyadavtiger/">LinkedIn</a></li>
-                    <li> <a  href="/privacy">Privacy</a></li>
+                    <li> <Link target='_blank' href="https://github.com/VivekYadavDeveloper">Github</Link></li>
+                    <li> <Link target='_blank' href="https://medium.com/@desiappdev24">Medium</Link></li>
+                    <li> <Link target='_blank' href="https://stackoverflow.com/users/17017641/vivek-yadav">Stack overflow</Link></li>
+                    <li> <Link target='_blank' href="https://www.linkedin.com/in/vivekyadavtiger/">LinkedIn</Link></li>
+                    <li> <Link href="/privacy">Privacy</Link></li>
+                    <li><Link href="/terms">Terms</Link> </li>
                 </ul>
             </div>
 

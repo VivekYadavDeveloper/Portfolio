@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import { motion } from 'motion/react'
+import Link from 'next/link'
 
 const PrivacyPolicyPage = () => {
     return (
@@ -57,9 +58,9 @@ const PrivacyPolicyPage = () => {
                         <p>
                             If you wish to delete your account, you may do so through the settings in the app
                             or contact us at
-                            <a href="mailto:desiappdev24@gmail.com" className="text-emerald-500 ml-1">
+                            <Link href="mailto:desiappdev24@gmail.com" className="text-emerald-500 ml-1">
                                 desiappdev24@gmail.com
-                            </a>.
+                            </Link>.
                         </p>
                     </motion.div>
 

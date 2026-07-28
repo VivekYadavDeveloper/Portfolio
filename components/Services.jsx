@@ -1,7 +1,8 @@
 'use client'
-import { assets, serviceData } from '@/assets/assets'
+import { assets, serviceData } from '../assets/assets'
 import Image from 'next/image'
 import React from 'react'
+import Link from 'next/link'
 
 import { motion, scale } from 'motion/react'
 
@@ -33,7 +34,7 @@ export const Services = () => {
                         <Image src={icon} alt={title} className='w-10' />
                         <h3 className='text-lg my-4 text-gray-700'>{title}</h3>
                         <p className='text-sm text-gray-600 leading-5'>{description}</p>
-                        <a className='flex items-center gap-2 text-sm mt-5' href={link} > Read more <Image className="w-4" src={assets.right_arrow} alt='Link' /></a>
+                        <Link className='flex items-center gap-2 text-sm mt-5' href={link} > Read more <Image className="w-4" src={assets.right_arrow} alt='Link' /></Link>
 
                     </motion.div>
 
