@@ -1,7 +1,7 @@
 'use client'
 
 import Image from "next/image";
-import { assets, workData } from "@/assets/assets";
+import { assets, workData } from "../assets/assets";
 import { motion } from 'motion/react'
 import React from 'react'
 import Link from "next/link";
